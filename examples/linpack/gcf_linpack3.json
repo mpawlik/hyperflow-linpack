@@ -1,0 +1,112 @@
+{
+  "processes": [
+    {
+      "name": "linpack00",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "./xlinpack_xeon64",
+          "args": [
+            "-i",
+            "lininput_128.txt"
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        0
+      ]
+    },
+    {
+      "name": "linpack01",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "./xlinpack_xeon64",
+          "args": [
+            "-i",
+            "lininput_128.txt"
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        1
+      ]
+    },
+    {
+      "name": "linpack02",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "./xlinpack_xeon64",
+          "args": [
+            "-i",
+            "lininput_128.txt"
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        2
+      ]
+    },
+    {
+      "name": "exit",
+      "function": "exit",
+      "type": "dataflow",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "",
+          "args": [
+            ""
+          ]
+        }
+      },
+      "ins": [
+        0,
+        1,
+        2
+      ],
+      "outs": [
+        "end"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": 0
+    },
+    {
+      "name": 1
+    },
+    {
+      "name": 2
+    },
+    {
+      "name": "start"
+    },
+    {
+      "name": "end"
+    }
+  ],
+  "ins": [
+    "start"
+  ],
+  "outs": [
+    "end"
+  ]
+}
