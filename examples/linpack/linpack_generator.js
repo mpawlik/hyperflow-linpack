@@ -40,8 +40,9 @@ function createWf(functionName, procs, memsize) {
     for (i = 0; i < procs; i++) {
         local_outs.push(i);
         wfOut.processes.push(
-            //AWS
-            task("linpack" + (i).pad(2), functionName, "./xlinpack_xeon64", ["-i", "/var/task/lininput_" + memsize + ".txt"], ["start"], [i])
+            //old AWS, not needed anymore
+            // task("linpack" + (i).pad(2), functionName, "./xlinpack_xeon64", ["-i", "/var/task/lininput_" + memsize + ".txt"], ["start"], [i])
+            task("linpack" + (i).pad(2), functionName, "./xlinpack_xeon64", ["-i", "lininput_" + memsize + ".txt"], ["start"], [i])
         );
     }
 
