@@ -10,7 +10,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -31,7 +31,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -52,7 +52,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -73,7 +73,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -94,7 +94,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -115,7 +115,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -136,7 +136,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -157,7 +157,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -178,7 +178,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -199,7 +199,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -220,7 +220,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -241,7 +241,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -262,7 +262,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -283,7 +283,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -304,7 +304,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -325,7 +325,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -346,7 +346,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -367,7 +367,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -388,7 +388,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -409,7 +409,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -430,7 +430,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -451,7 +451,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -472,7 +472,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -493,7 +493,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
@@ -514,7 +514,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "/var/task/lininput_128.txt"
+            "lininput_128.txt"
           ]
         }
       },
