@@ -2,7 +2,7 @@
   "processes": [
     {
       "name": "linpack00",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -10,7 +10,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -23,7 +23,7 @@
     },
     {
       "name": "linpack01",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -31,7 +31,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -44,7 +44,7 @@
     },
     {
       "name": "linpack02",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -52,7 +52,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -65,7 +65,7 @@
     },
     {
       "name": "linpack03",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -73,7 +73,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -86,7 +86,7 @@
     },
     {
       "name": "linpack04",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -94,7 +94,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -107,7 +107,7 @@
     },
     {
       "name": "linpack05",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -115,7 +115,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -128,7 +128,7 @@
     },
     {
       "name": "linpack06",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -136,7 +136,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -149,7 +149,7 @@
     },
     {
       "name": "linpack07",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -157,7 +157,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -170,7 +170,7 @@
     },
     {
       "name": "linpack08",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -178,7 +178,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -191,7 +191,7 @@
     },
     {
       "name": "linpack09",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -199,7 +199,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -212,7 +212,7 @@
     },
     {
       "name": "linpack10",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -220,7 +220,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -233,7 +233,7 @@
     },
     {
       "name": "linpack11",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -241,7 +241,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -254,7 +254,7 @@
     },
     {
       "name": "linpack12",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -262,7 +262,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -275,7 +275,7 @@
     },
     {
       "name": "linpack13",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -283,7 +283,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -296,7 +296,7 @@
     },
     {
       "name": "linpack14",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -304,7 +304,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -317,7 +317,7 @@
     },
     {
       "name": "linpack15",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -325,7 +325,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -338,7 +338,7 @@
     },
     {
       "name": "linpack16",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -346,7 +346,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -359,7 +359,7 @@
     },
     {
       "name": "linpack17",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -367,7 +367,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -380,7 +380,7 @@
     },
     {
       "name": "linpack18",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -388,7 +388,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -401,7 +401,7 @@
     },
     {
       "name": "linpack19",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -409,7 +409,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -422,7 +422,7 @@
     },
     {
       "name": "linpack20",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -430,7 +430,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -443,7 +443,7 @@
     },
     {
       "name": "linpack21",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -451,7 +451,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -464,7 +464,7 @@
     },
     {
       "name": "linpack22",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -472,7 +472,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -485,7 +485,7 @@
     },
     {
       "name": "linpack23",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -493,7 +493,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -506,7 +506,7 @@
     },
     {
       "name": "linpack24",
-      "function": "command",
+      "function": "RESTServiceCommand",
       "type": "dataflow",
       "firingLimit": 1,
       "config": {
@@ -514,7 +514,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },

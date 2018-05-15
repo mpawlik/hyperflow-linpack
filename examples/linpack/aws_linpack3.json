@@ -10,7 +10,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -31,7 +31,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },
@@ -52,7 +52,7 @@
           "executable": "./xlinpack_xeon64",
           "args": [
             "-i",
-            "lininput_256.txt"
+            "/var/task/lininput_128.txt"
           ]
         }
       },

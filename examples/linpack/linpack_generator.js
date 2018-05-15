@@ -26,7 +26,7 @@ function task(name, functionName, executable, args, ins, outs) {
     }
 }
 
-function createWf(functionName, procs) {
+function createWf(functionName, procs, memsize) {
 
     var wfOut = {
         processes: [],
@@ -40,8 +40,8 @@ function createWf(functionName, procs) {
     for (i = 0; i < procs; i++) {
         local_outs.push(i);
         wfOut.processes.push(
-            task("linpack" + (i).pad(2), functionName, "./xlinpack_xeon64", ["-i", "lininput_256.txt"], ["start"], [i])
-            // task("linpack" + (i).pad(2), functionName, "sleep", ["3"], ["start"], [i])
+            //AWS
+            task("linpack" + (i).pad(2), functionName, "./xlinpack_xeon64", ["-i", "/var/task/lininput_" + memsize + ".txt"], ["start"], [i])
         );
     }
 
@@ -62,8 +62,8 @@ function createWf(functionName, procs) {
 }
 
 if (!argv._[0]) {
-    console.log("Usage: node linpack_generator.js function_name concurent_process_number");
+    console.log("Usage: node linpack_generator.js function_name concurent_process_number mem_size");
     process.exit();
 }
 
-createWf(argv._[0], argv._[1]);
+createWf(argv._[0], argv._[1], argv._[2]);
