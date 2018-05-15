@@ -1,4 +1,4 @@
-var request = require('requestretry');
+var request = require('request');
 var executor_config = require('./RESTServiceCommand.config.js');
 var identity = function(e) {return e};
 
@@ -37,8 +37,11 @@ function RESTServiceCommand(ins, outs, config, cb) {
         }
         if (response) {
              console.log("Function: " + executable + " response status code: " + response.statusCode + " number of request attempts: " + response.attempts)
+        } else {
+            console.log("No response!");
         }
         console.log("Function: " + executable + " data: " + body.toString());
+        console.log("#DATA:" + JSON.stringify(body));
         cb(null, outs);
     }
 
