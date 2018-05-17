@@ -1,0 +1,62 @@
+{
+  "processes": [
+    {
+      "name": "linpack00",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "linpack_xeon64.exe",
+          "args": [
+            "-i",
+            "lininput_128.txt"
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        0
+      ]
+    },
+    {
+      "name": "exit",
+      "function": "exit",
+      "type": "dataflow",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "",
+          "args": [
+            ""
+          ]
+        }
+      },
+      "ins": [
+        0
+      ],
+      "outs": [
+        "end"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": 0
+    },
+    {
+      "name": "start"
+    },
+    {
+      "name": "end"
+    }
+  ],
+  "ins": [
+    "start"
+  ],
+  "outs": [
+    "end"
+  ]
+}
