@@ -40,12 +40,18 @@ function RESTServiceCommand(ins, outs, config, cb) {
         } else {
             console.log("No response!");
         }
+        var request_end = Date.now();
+        var request_duration = request_end - request_start;
         console.log("Function: " + executable + " data: " + body.toString());
+        body['request_start'] = request_start;
+        body['request_end'] = request_end;
+        body['request_duration'] = request_duration;
         console.log("#DATA:" + JSON.stringify(body));
         cb(null, outs);
     }
 
 
+    var request_start = Date.now();
     var req = request.post(
         {timeout:600000, url:url, json:jobMessage, headers: {'Content-Type' : 'application/json', 'Accept': '*/*'}}, requestCb);
 
