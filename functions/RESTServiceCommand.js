@@ -49,6 +49,8 @@ function RESTServiceCommand(ins, outs, config, cb) {
         body['request_duration'] = request_duration;
         body['executor_url'] = url;
         body['args'] = config.executor.args;
+        body['process_id'] = config.procId;
+        body['firing_id'] = config.firingId;
         console.log("#DATA:" + JSON.stringify(body));
         cb(null, outs);
     }
