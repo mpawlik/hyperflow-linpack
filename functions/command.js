@@ -37,7 +37,8 @@ function command(ins, outs, config, cb) {
 
 function command_print(ins, outs, config, cb) {
     var exec = config.executor.executable,
-        args = config.executor.args.join(' ');
+        args = config.executor.args;
+        // args = config.executor.args.join(' ');
 
     console.log(exec, args);
 
