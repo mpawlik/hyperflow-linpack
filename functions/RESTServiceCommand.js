@@ -1,4 +1,4 @@
-var request = require('request');
+var request = require('requestretry');
 var executor_config = require('./RESTServiceCommand.config.js');
 var identity = function(e) {return e};
 
@@ -30,6 +30,7 @@ function RESTServiceCommand(ins, outs, config, cb) {
     console.log("Executing: " + JSON.stringify(jobMessage) + "@" + url);
 
     function requestCb(err, response, body) {
+        var request_end = Date.now();
         if (err) {
             console.log("Function: " + executable + " error: " + err);
             cb(err, outs);
@@ -40,7 +41,7 @@ function RESTServiceCommand(ins, outs, config, cb) {
         } else {
             console.log("No response!");
         }
-        var request_end = Date.now();
+
         var request_duration = request_end - request_start;
         console.log("Function: " + executable + " data: " + body.toString());
         body['request_start'] = request_start;
@@ -55,6 +56,7 @@ function RESTServiceCommand(ins, outs, config, cb) {
 
     var request_start = Date.now();
     var req = request.post(
+        //todo add explicite retryDelay
         {timeout:600000, url:url, json:jobMessage, headers: {'Content-Type' : 'application/json', 'Accept': '*/*'}}, requestCb);
 
 
