@@ -2,7 +2,14 @@ var request = require('requestretry');
 var executor_config = require('./RESTServiceCommand.config.js');
 var identity = function(e) {return e};
 
-
+function simpleRetryStrategy(err, response, body) {
+    if (err || response.statusCode >= 300) {
+        console.log("ERRPR", err, response !== undefined ? response.statusCode + response.message : "");
+        return true;
+    } else {
+        return false;
+    }
+}
 
 function RESTServiceCommand(ins, outs, config, cb) {
 
@@ -55,17 +62,19 @@ function RESTServiceCommand(ins, outs, config, cb) {
         cb(null, outs);
     }
 
-
+    let req_timeout = 20 * 60 * 1000;
     var request_start = Date.now();
+
     var req = request.post(
         //todo add explicite retryDelay
         {
-            timeout: 600000,
+            timeout: req_timeout,
             url: url,
             json: jobMessage,
             headers: {'Content-Type': 'application/json', 'Accept': '*/*'},
-            maxAttempts: 1000,
-            retryDelay: 5000
+            maxAttempts: 100,
+            retryDelay: 5000,
+            // retryStrategy: simpleRetryStrategy
         },
         requestCb
     );
