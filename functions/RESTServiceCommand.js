@@ -59,7 +59,16 @@ function RESTServiceCommand(ins, outs, config, cb) {
     var request_start = Date.now();
     var req = request.post(
         //todo add explicite retryDelay
-        {timeout:600000, url:url, json:jobMessage, headers: {'Content-Type' : 'application/json', 'Accept': '*/*'}}, requestCb);
+        {
+            timeout: 600000,
+            url: url,
+            json: jobMessage,
+            headers: {'Content-Type': 'application/json', 'Accept': '*/*'},
+            maxAttempts: 1000,
+            retryDelay: 5000
+        },
+        requestCb
+    );
 
 
 }
