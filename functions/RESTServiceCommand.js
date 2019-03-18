@@ -4,7 +4,7 @@ var identity = function(e) {return e};
 
 function simpleRetryStrategy(err, response, body) {
     if (err || response.statusCode >= 300) {
-        console.log("ERRPR", err, response !== undefined ? response.statusCode + response.message : "");
+        console.log("#ERROR ", err, response !== undefined ? response.statusCode : "");
         return true;
     } else {
         return false;
@@ -58,6 +58,7 @@ function RESTServiceCommand(ins, outs, config, cb) {
         body['args'] = config.executor.args;
         body['process_id'] = config.procId;
         body['firing_id'] = config.firingId;
+        body['attempts'] = response.attempts;
         console.log("#DATA:" + JSON.stringify(body));
         cb(null, outs);
     }
@@ -72,9 +73,9 @@ function RESTServiceCommand(ins, outs, config, cb) {
             url: url,
             json: jobMessage,
             headers: {'Content-Type': 'application/json', 'Accept': '*/*'},
-            maxAttempts: 100,
+            maxAttempts: 500,
             retryDelay: 5000,
-            // retryStrategy: simpleRetryStrategy
+            retryStrategy: simpleRetryStrategy
         },
         requestCb
     );
